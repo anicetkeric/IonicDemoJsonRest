@@ -16,3 +16,14 @@ This example, we will use the service rest  online [JSONPlaceholder](https://jso
 
 ``` ionic start IonicDemoJsonRest blank --v2 ```
 
+
+## Create REST service API call
+
+``` ionic start IonicDemoJsonRest blank --v2 ```
+
+
+Go to this newly created folder.<br>
+``` cd IonicDemoJsonRest/ ```
+
+add a provider <br>
+```ionic g provider Service ```
