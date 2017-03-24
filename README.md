@@ -71,7 +71,22 @@ public SERVICE_URL='https://jsonplaceholder.typicode.com';
 
 }
 
-
-
 ```
+-	We use **Angular’s http** object to access the REST services.
+-	The Angular 2 http object methods (get, post, put, etc.) don’t return Promises: they return **Observables** from the RxJS library.
+-	The **Observable.map()** function is used to transform the response in a format easily consumable by the observer.
+-	**import 'rxjs/add/operator/map';** and **import 'rxjs/add/operator/catch';** adds all the operators to Observable (map, catch, etc).
+
+In this example we use observable. 
+
+* promise:
+  * returns a single value
+  * not cancellable
+* observable
+  * works with multiple values over time
+  * cancellable
+  * supports map, filter, reduce and similar operators
+  * proposed feature for ES 2016
+  * use Reactive Extensions (RxJS)
+  * an array whose items arrive asynchronously over time
 
