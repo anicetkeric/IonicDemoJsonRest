@@ -32,7 +32,7 @@ Add providers tag in app.module.ts
 
 Then add in provider @NgModule.
 
-## Service.ts 
+### Service.ts 
 ```javascript
 
 import { Injectable } from '@angular/core';
@@ -90,3 +90,4 @@ In this example we use observable.
   * use Reactive Extensions (RxJS)
   * an array whose items arrive asynchronously over time
 
+### Display data in View
