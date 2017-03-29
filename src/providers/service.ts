@@ -18,15 +18,6 @@ public SERVICE_URL='https://jsonplaceholder.typicode.com';
     console.log('Hello Service Provider');
   }
 
- getUsers2() {
-        let body = '/users';
-        let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        let options = new RequestOptions({ headers: headers });
-        return this.http.post(this.SERVICE_URL, body, options)
-            .map(res =>(res.json()))
-            .catch(this.handleError);
-    }
-
 
  getUsers(){
           let method = '/users';
