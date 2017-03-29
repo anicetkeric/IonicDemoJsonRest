@@ -90,4 +90,4 @@ In this example we use observable.
   * use Reactive Extensions (RxJS)
   * an array whose items arrive asynchronously over time
 
-### Display data in View
+### call service in home page
