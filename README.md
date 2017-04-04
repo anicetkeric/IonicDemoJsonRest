@@ -70,7 +70,6 @@ public SERVICE_URL='https://jsonplaceholder.typicode.com';
 
 
 }
-
 ```
 -	We use **Angular’s http** object to access the REST services.
 -	The Angular 2 http object methods (get, post, put, etc.) don’t return Promises: they return **Observables** from the RxJS library.
@@ -91,3 +90,36 @@ In this example we use observable.
   * an array whose items arrive asynchronously over time
 
 ### call service in home page
+#### home.html
+
+```html
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+    <ion-item *ngFor="let user of newsData">      
+     <span>  {{user.name}} - {{user.username}}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>
+```
+#### call service in home.ts
+
+```javascript
+users() {
+ this.api.getUsers().subscribe(data => {
+    console.log(data);
+ //alert(JSON.stringify(data));
+     this.newsData=data;
+    
+  }, (err) => {
+    console.log(err);
+  });
+}
+```
