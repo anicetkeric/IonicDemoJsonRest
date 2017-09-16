@@ -109,7 +109,7 @@ In this example we use observable.
   </ion-list>
 </ion-content>
 ```
-#### call service in home.ts
+#### Call service in home.ts
 
 ```javascript
 users() {
